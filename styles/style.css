@@ -98,3 +98,72 @@ footer {
     padding: 0 1rem;
   }
 }
+/*  -------- Member Profiles ---------- */
+/* Team Section Grid */
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  background: #f4f6f8;
+}
+
+/* Member Card */
+.member {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1.5rem;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #0078D7;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.member h2 {
+  color: #0078D7;
+  margin-bottom: 0.5rem;
+}
+
+.member p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Header & Footer */
+header, footer {
+  background: #0078D7;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
